@@ -11,12 +11,12 @@ export default function Home() {
       <section className="relative min-h-screen overflow-hidden pt-20">
         {/* Background Elements */}
         <div className="absolute inset-0 knight-grid" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-950/95 to-navy-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50/95 to-gray-100" />
 
         {/* Decorative Knight Silhouette */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[800px] opacity-[0.03]">
           <Image
-            src="/logo.jpeg"
+            src="/Cavalier_icon_bg-white_color-original.svg"
             alt=""
             fill
             className="object-contain"
@@ -25,20 +25,20 @@ export default function Home() {
         </div>
 
         {/* Animated Gradient Orb */}
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gold-500/5 rounded-full blur-[120px] animate-pulse-slow" />
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-navy-primary/5 rounded-full blur-[120px] animate-pulse-slow" />
 
         {/* Content */}
         <div className="container-wide relative z-10 flex items-center min-h-[calc(100vh-5rem)]">
           <div className="max-w-4xl">
             {/* Main Headline */}
-            <h1 className="text-slate-50 mb-6 animate-fade-in-up">
+            <h1 className="text-slate-900 mb-6 animate-fade-in-up">
               Building the Future,
               <br />
               <span className="text-gradient">One Venture</span> at a Time.
             </h1>
 
             {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-10 leading-relaxed animate-fade-in-up delay-200">
+            <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mb-10 leading-relaxed animate-fade-in-up delay-200">
               We believe in building profitable SaaS and info products through
               lean development and rapid feedback loops to achieve true product-market fit.
             </p>
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Portfolio Preview Section */}
-      <section className="relative py-24 md:py-32 bg-navy-950">
+      <section className="relative py-24 md:py-32 bg-white">
         <div className="container-wide">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
             <SectionHeader
@@ -70,7 +70,7 @@ export default function Home() {
             />
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 text-gold-500 hover:text-gold-400 transition-colors duration-300 group"
+              className="inline-flex items-center gap-2 text-navy-primary hover:text-navy-light transition-colors duration-300 group"
             >
               View All
               <svg
@@ -93,17 +93,17 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-24 md:py-32 bg-navy-900 overflow-hidden">
+      <section className="relative py-24 md:py-32 bg-gray-50 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 knight-grid opacity-50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-transparent to-navy-900" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-50 via-transparent to-gray-50" />
 
         <div className="container-wide relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-slate-50 mb-6">
+            <h2 className="text-slate-900 mb-6">
               Ready to Make Your Move?
             </h2>
-            <p className="text-xl text-slate-400 mb-10 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-10 leading-relaxed">
               Whether you have an idea to discuss or want to explore partnership opportunities,
               we&apos;re always open to a conversation.
             </p>

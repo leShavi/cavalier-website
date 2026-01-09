@@ -16,16 +16,16 @@ export default function SectionHeader({
   return (
     <div className={`max-w-2xl ${align === 'center' ? 'mx-auto text-center' : ''}`}>
       {eyebrow && (
-        <span className="inline-flex items-center gap-3 text-[11px] font-semibold tracking-[0.2em] uppercase text-gold-500 mb-4">
-          <span className="w-8 h-px bg-gold-500" />
+        <span className="inline-flex items-center gap-3 text-[11px] font-semibold tracking-[0.2em] uppercase text-navy-primary mb-4">
+          <span className="w-8 h-px bg-navy-primary" />
           {eyebrow}
         </span>
       )}
-      <h2 className={`mb-4 ${light ? 'text-navy-900' : 'text-slate-50'}`}>
+      <h2 className={`mb-4 ${light ? 'text-navy-primary' : 'text-slate-900'}`}>
         {title}
       </h2>
       {description && (
-        <p className={`text-lg leading-relaxed ${light ? 'text-slate-600' : 'text-slate-400'}`}>
+        <p className={`text-lg leading-relaxed ${light ? 'text-slate-500' : 'text-slate-600'}`}>
           {description}
         </p>
       )}

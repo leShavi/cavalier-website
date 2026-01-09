@@ -27,9 +27,9 @@ export default function ContactPage() {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative py-20 md:py-28 bg-navy-900">
+      <section className="relative py-20 md:py-28 bg-gray-50">
         <div className="absolute inset-0 knight-grid opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-950 to-navy-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50" />
 
         <div className="container-wide relative z-10">
           <SectionHeader
@@ -41,25 +41,25 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 md:py-28 bg-navy-950">
+      <section className="py-20 md:py-28 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Info */}
             <div>
-              <h2 className="text-slate-50 text-2xl font-serif mb-8">Get in Touch</h2>
+              <h2 className="text-slate-900 text-2xl font-serif mb-8">Get in Touch</h2>
 
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-12 h-12 rounded bg-navy-primary/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-navy-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-slate-50 font-medium mb-1">Email</h4>
+                    <h4 className="text-slate-900 font-medium mb-1">Email</h4>
                     <a
                       href="mailto:hello@cavalierventures.com"
-                      className="text-slate-400 hover:text-gold-500 transition-colors duration-300"
+                      className="text-slate-500 hover:text-navy-primary transition-colors duration-300"
                     >
                       hello@cavalierventures.com
                     </a>
@@ -67,40 +67,40 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-12 h-12 rounded bg-navy-primary/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-navy-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-slate-50 font-medium mb-1">Location</h4>
-                    <p className="text-slate-400">Remote-first, Global Reach</p>
+                    <h4 className="text-slate-900 font-medium mb-1">Location</h4>
+                    <p className="text-slate-500">Remote-first, Global Reach</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-12 h-12 rounded bg-navy-primary/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-navy-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-slate-50 font-medium mb-1">Response Time</h4>
-                    <p className="text-slate-400">Usually within 24-48 hours</p>
+                    <h4 className="text-slate-900 font-medium mb-1">Response Time</h4>
+                    <p className="text-slate-500">Usually within 24-48 hours</p>
                   </div>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="mt-12 pt-12 border-t border-navy-800/50">
-                <h4 className="text-slate-50 font-medium mb-4">Follow Us</h4>
+              <div className="mt-12 pt-12 border-t border-gray-200">
+                <h4 className="text-slate-900 font-medium mb-4">Follow Us</h4>
                 <div className="flex gap-4">
                   <a
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded border border-navy-700 flex items-center justify-center text-slate-400 hover:text-gold-500 hover:border-gold-500 transition-all duration-300"
+                    className="w-12 h-12 rounded border border-gray-300 flex items-center justify-center text-slate-500 hover:text-navy-primary hover:border-navy-primary transition-all duration-300"
                     aria-label="Twitter"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -111,7 +111,7 @@ export default function ContactPage() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded border border-navy-700 flex items-center justify-center text-slate-400 hover:text-gold-500 hover:border-gold-500 transition-all duration-300"
+                    className="w-12 h-12 rounded border border-gray-300 flex items-center justify-center text-slate-500 hover:text-navy-primary hover:border-navy-primary transition-all duration-300"
                     aria-label="LinkedIn"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-navy-900/50 border border-navy-800/50 rounded-sm p-8 md:p-10">
+            <div className="bg-gray-50 border border-gray-200 rounded-sm p-8 md:p-10">
               {isSubmitted ? (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
                   <div className="w-16 h-16 rounded-full bg-emerald-500/10 flex items-center justify-center mb-6">
@@ -131,8 +131,8 @@ export default function ContactPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-slate-50 text-2xl font-serif mb-4">Message Sent</h3>
-                  <p className="text-slate-400 max-w-sm">
+                  <h3 className="text-slate-900 text-2xl font-serif mb-4">Message Sent</h3>
+                  <p className="text-slate-500 max-w-sm">
                     Thank you for reaching out. We&apos;ll get back to you within 24-48 hours.
                   </p>
                 </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-slate-300 text-sm font-medium mb-2">
+                      <label htmlFor="name" className="block text-slate-700 text-sm font-medium mb-2">
                         Name
                       </label>
                       <input
@@ -150,12 +150,12 @@ export default function ContactPage() {
                         required
                         value={formState.name}
                         onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        className="w-full px-4 py-3 bg-navy-950/50 border border-navy-700/50 rounded-sm text-slate-50 placeholder-slate-500 focus:outline-none focus:border-gold-500/50 transition-colors duration-300"
+                        className="w-full px-4 py-3 bg-white border border-gray-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-colors duration-300"
                         placeholder="Your name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-slate-300 text-sm font-medium mb-2">
+                      <label htmlFor="email" className="block text-slate-700 text-sm font-medium mb-2">
                         Email
                       </label>
                       <input
@@ -165,14 +165,14 @@ export default function ContactPage() {
                         required
                         value={formState.email}
                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full px-4 py-3 bg-navy-950/50 border border-navy-700/50 rounded-sm text-slate-50 placeholder-slate-500 focus:outline-none focus:border-gold-500/50 transition-colors duration-300"
+                        className="w-full px-4 py-3 bg-white border border-gray-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-colors duration-300"
                         placeholder="your@email.com"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-slate-300 text-sm font-medium mb-2">
+                    <label htmlFor="subject" className="block text-slate-700 text-sm font-medium mb-2">
                       Subject
                     </label>
                     <select
@@ -181,18 +181,18 @@ export default function ContactPage() {
                       required
                       value={formState.subject}
                       onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
-                      className="w-full px-4 py-3 bg-navy-950/50 border border-navy-700/50 rounded-sm text-slate-50 focus:outline-none focus:border-gold-500/50 transition-colors duration-300"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-sm text-slate-900 focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-colors duration-300"
                     >
-                      <option value="" className="bg-navy-950">Select a topic</option>
-                      <option value="partnership" className="bg-navy-950">Partnership Inquiry</option>
-                      <option value="investment" className="bg-navy-950">Investment Discussion</option>
-                      <option value="product" className="bg-navy-950">Product Inquiry</option>
-                      <option value="other" className="bg-navy-950">Other</option>
+                      <option value="" className="bg-white">Select a topic</option>
+                      <option value="partnership" className="bg-white">Partnership Inquiry</option>
+                      <option value="investment" className="bg-white">Investment Discussion</option>
+                      <option value="product" className="bg-white">Product Inquiry</option>
+                      <option value="other" className="bg-white">Other</option>
                     </select>
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-slate-300 text-sm font-medium mb-2">
+                    <label htmlFor="message" className="block text-slate-700 text-sm font-medium mb-2">
                       Message
                     </label>
                     <textarea
@@ -202,7 +202,7 @@ export default function ContactPage() {
                       rows={5}
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      className="w-full px-4 py-3 bg-navy-950/50 border border-navy-700/50 rounded-sm text-slate-50 placeholder-slate-500 focus:outline-none focus:border-gold-500/50 transition-colors duration-300 resize-none"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-colors duration-300 resize-none"
                       placeholder="Tell us about your inquiry..."
                     />
                   </div>

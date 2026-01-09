@@ -18,9 +18,9 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-navy-900 border-t border-navy-800/50 pt-16 pb-12 lg:pt-20 lg:pb-16">
+    <footer className="relative bg-gray-50 border-t border-gray-200 pt-16 pb-12 lg:pt-20 lg:pb-16">
       {/* Decorative top line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-navy-primary/50 to-transparent" />
 
       <div className="container-wide">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-12 lg:gap-16">
@@ -29,17 +29,17 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="relative w-12 h-12">
                 <Image
-                  src="/logo.jpeg"
+                  src="/Cavalier_icon_bg-white_color-original.svg"
                   alt="Cavalier Ventures"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-slate-50 font-semibold tracking-wide uppercase">
+                <span className="text-slate-900 font-semibold tracking-wide uppercase">
                   Cavalier
                 </span>
-                <span className="text-gold-500 text-xs tracking-[0.2em] uppercase">
+                <span className="text-navy-primary text-xs tracking-[0.2em] uppercase">
                   Ventures
                 </span>
               </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded border border-navy-700 flex items-center justify-center text-slate-400 hover:text-gold-500 hover:border-gold-500 transition-colors duration-300"
+                className="w-10 h-10 rounded border border-gray-300 flex items-center justify-center text-slate-500 hover:text-navy-primary hover:border-navy-primary transition-colors duration-300"
                 aria-label="Twitter"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded border border-navy-700 flex items-center justify-center text-slate-400 hover:text-gold-500 hover:border-gold-500 transition-colors duration-300"
+                className="w-10 h-10 rounded border border-gray-300 flex items-center justify-center text-slate-500 hover:text-navy-primary hover:border-navy-primary transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {/* Ventures Column */}
           <div className="md:col-span-1 lg:col-span-2">
-            <h4 className="text-slate-50 font-semibold mb-6 text-sm tracking-wide uppercase">
+            <h4 className="text-slate-900 font-semibold mb-6 text-sm tracking-wide uppercase">
               Ventures
             </h4>
             <ul className="space-y-3">
@@ -83,7 +83,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-gold-500 transition-colors duration-300 text-sm"
+                    className="text-slate-500 hover:text-navy-primary transition-colors duration-300 text-sm"
                   >
                     {link.label}
                   </Link>
@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Company Column */}
           <div className="md:col-span-1 lg:col-span-2">
-            <h4 className="text-slate-50 font-semibold mb-6 text-sm tracking-wide uppercase">
+            <h4 className="text-slate-900 font-semibold mb-6 text-sm tracking-wide uppercase">
               Company
             </h4>
             <ul className="space-y-3">
@@ -102,7 +102,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-gold-500 transition-colors duration-300 text-sm"
+                    className="text-slate-500 hover:text-navy-primary transition-colors duration-300 text-sm"
                   >
                     {link.label}
                   </Link>
@@ -113,7 +113,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-navy-800/50">
+        <div className="mt-16 pt-8 border-t border-gray-200">
           <p className="text-slate-500 text-sm">
             &copy; {new Date().getFullYear()} Cavalier Ventures. All rights reserved.
           </p>

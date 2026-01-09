@@ -29,7 +29,7 @@ export default function Navigation() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-navy-950/95 backdrop-blur-md border-b border-navy-800/50'
+            ? 'bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm'
             : 'bg-transparent'
         }`}
       >
@@ -39,7 +39,7 @@ export default function Navigation() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-105">
                 <Image
-                  src="/logo.jpeg"
+                  src="/Cavalier_icon_bg-white_color-original.svg"
                   alt="Cavalier Ventures"
                   fill
                   className="object-contain"
@@ -47,10 +47,10 @@ export default function Navigation() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-slate-50 font-semibold text-sm tracking-wide uppercase">
+                <span className="text-slate-900 font-semibold text-sm tracking-wide uppercase">
                   Cavalier
                 </span>
-                <span className="text-gold-500 text-[10px] tracking-[0.2em] uppercase">
+                <span className="text-navy-primary text-[10px] tracking-[0.2em] uppercase">
                   Ventures
                 </span>
               </div>
@@ -64,13 +64,13 @@ export default function Navigation() {
                   href={link.href}
                   className={`relative text-sm font-medium tracking-wide transition-colors duration-300 ${
                     pathname === link.href
-                      ? 'text-gold-500'
-                      : 'text-slate-400 hover:text-slate-50'
+                      ? 'text-navy-primary'
+                      : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
                   {link.label}
                   {pathname === link.href && (
-                    <span className="absolute -bottom-1 left-0 w-full h-px bg-gold-500" />
+                    <span className="absolute -bottom-1 left-0 w-full h-px bg-navy-primary" />
                   )}
                 </Link>
               ))}
@@ -93,17 +93,17 @@ export default function Navigation() {
               aria-label="Toggle menu"
             >
               <span
-                className={`w-6 h-px bg-slate-50 transition-all duration-300 ${
+                className={`w-6 h-px bg-slate-900 transition-all duration-300 ${
                   mobileOpen ? 'rotate-45 translate-y-2' : ''
                 }`}
               />
               <span
-                className={`w-6 h-px bg-slate-50 transition-all duration-300 ${
+                className={`w-6 h-px bg-slate-900 transition-all duration-300 ${
                   mobileOpen ? 'opacity-0' : ''
                 }`}
               />
               <span
-                className={`w-6 h-px bg-slate-50 transition-all duration-300 ${
+                className={`w-6 h-px bg-slate-900 transition-all duration-300 ${
                   mobileOpen ? '-rotate-45 -translate-y-2' : ''
                 }`}
               />
@@ -119,7 +119,7 @@ export default function Navigation() {
         }`}
       >
         <div
-          className="absolute inset-0 bg-navy-950/98 backdrop-blur-lg"
+          className="absolute inset-0 bg-white/98 backdrop-blur-lg"
           onClick={() => setMobileOpen(false)}
         />
         <div className="relative h-full flex flex-col items-center justify-center gap-8">
@@ -129,7 +129,7 @@ export default function Navigation() {
               href={link.href}
               onClick={() => setMobileOpen(false)}
               className={`text-3xl font-serif transition-all duration-300 ${
-                pathname === link.href ? 'text-gold-500' : 'text-slate-50'
+                pathname === link.href ? 'text-navy-primary' : 'text-slate-900'
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
