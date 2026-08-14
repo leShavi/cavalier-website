@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# cavalier-ventures.com
 
-## Getting Started
+Single page site for Cavalier Ventures LLC, plus the three policy pages needed
+for payment processing.
 
-First, run the development server:
+Static HTML, CSS, and vanilla JS. No build step, no dependencies, no framework.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Files
+
+```
+index.html          landing page
+privacy.html        privacy policy
+terms.html          terms of service
+refunds.html        refund policy
+styles.css          landing page styles
+legal.css           policy page styles
+main.js             video playback fallbacks and viewport height fix
+assets/bg.mp4       background loop, 600 KB
+assets/bg-poster.jpg first frame, shown before the video decodes
+assets/logo.webp    knight mark
+assets/favicon.png
+assets/logo-source.svg  original vector, kept for regenerating the mark
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run it
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Any static server works. From the repo root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+python3 -m http.server 4173
+```
 
-## Learn More
+Then open http://localhost:4173.
 
-To learn more about Next.js, take a look at the following resources:
+Opening `index.html` directly from the filesystem also works, though some
+browsers block the video on `file://`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploying
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Upload the repo root as is. There is nothing to compile. Every path is
+relative, so it works from a subdirectory too.
 
-## Deploy on Vercel
+## Entity details used in the policies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Taken from the IRS CP575G notice dated 19 January 2026:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Cavalier Ventures LLC, a Wyoming limited liability company
+- 30 N Gould St Ste N, Sheridan, WY 82801
+- Governing law and jurisdiction: Wyoming
+
+The EIN is deliberately not published anywhere in this repo. It belongs in tax
+filings and in the Stripe dashboard, not on a website.
+
+The policies were drafted to cover a services business that bills through
+Stripe. Have a lawyer read them before you rely on them.
+
+## Notes
+
+- The display face is BubbledotICG-FinePos, served by OnlineWebFonts under
+  CC BY 4.0. That licence asks for visible credit, so either add it, buy a
+  licence for the original Bubbledot ICG, or swap the font.
+- The background video is served from `assets/`, not a third party CDN. It was
+  re-encoded from 13.8 MB to 600 KB with no visible loss.
+- The page sets no cookies and runs no analytics. If you add either, update
+  `privacy.html`, which currently states that it does neither.
